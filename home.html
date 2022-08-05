@@ -11,39 +11,601 @@
     <title>E commerce</title>
 </head>
 <body>
-    <!-- header section start -->
-        <header class="header">
-             <!-- overlay -->
-             <div class="overlay"></div>
-             <!-- overlay -->
+   <main>
+    <div class="home">
+        <!-- header section start -->
+        <header>
             <div class="container">
                 <nav class="nav-bar">
                     <div class="logo">
-                        <img src="./photos/images/logo.png" alt="logo">
+                        <img src="./photos/home/logo.png" alt="logo">
                     </div>
                     <div class="nav-links">
                         <div class="logo">
-                            <img src="./photos/images/logo.png" alt="logo">
+                            <img src="./photos/home/logo.png" alt="logo">
                         </div>
                         <i id="cross">&#10005;</i>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="account.html">Create Account</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <div class="another-links">
-                       <ul>
-                           <li><a href="">Sign Up</a></li>
-                           <li><a href="#" class="fas fa-shopping-bag" id="bag"></a></li>
-                       </ul>
+                        <ul>
+                            <li><a href="">Sign Up</a></li>
+                            <li><a href="#" class="fas fa-shopping-bag" id="bag"></a></li>
+                        </ul>
                     </div>
                     <i class="fas fa-bars" id="bars"></i>
                 </nav>
             </div>
         </header>
-    <!-- header section end -->
+        <!-- header section end -->
+    
+       <!-- product section start -->
+        <section class="container">
+            <div class="section">
+                <div class="content">
+                    <h2>Get Your Favourite And <br> Save Your <span>Time</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, magni doloremque similique deleniti! Omnis maiores alias deserunt possimus?</p>
+                    <a href="#" class="btn" type="button">Explore Now</a>
+                </div>
+                <div class="bg-img">
+                    <img src="./photos/home/banner.png">
+                </div>
+            </div>
+        </section>
+       <!-- product section end -->
+    </div>  
+    <!-- product section show start -->
+    <!-- feature products -->
+   <div class="product-container">
+        <div class="products">
+            <div class="title">
+                <h3>Feature <span>Products</span></h3>
+            </div>
+            <div class="product-row">
+                <div class="product-col-4 p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/g1.jpg">
+                        <div class="offer">
+                            -10%
+                        </div>
+                       <button type="button" class="btn view">Quick View</button>
+                       <div class="icons">
+                           <i class="far fa-heart"></i>
+                           <i class="far fa-eye"></i>
+                       </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">Glass</p>
+                        <p class="tit">Modern Glass</p>
+                        <p class="price"><span>$50</span> <span>$39</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+                <div class="product-col-4 p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/w15.webp">
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">Watch</p>
+                        <p class="tit">2022 Watch</p>
+                        <p class="price"><span>$100</span> <span>$99</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+                <div class="product-col-4 p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/bp1.jpeg">
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">BackPack</p>
+                        <p class="tit">Portable BackPack</p>
+                        <p class="price"><span>$200</span> <span>$139</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+                <div class="product-col-4 p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/s1.jpg">
+                        <div class="offer">
+                            -20%
+                        </div>
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">Shoe</p>
+                        <p class="tit">Sport Shoe</p>
+                        <p class="price"><span>$100</span> <span>$99</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div> 
+   <!-- feature products -->
+
+   <!-- latest products show start -->
+   <div class="product-container">
+    <div class="products">
+        <div class="title">
+            <h3>Latest <span>Products</span></h3>
+        </div>
+        <div class="slider">
+            <div class="product-row" id="slide">
+                <div class="slides p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/w18.jpg">
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">Glass</p>
+                        <p class="tit">Modern Glass</p>
+                        <p class="price"><span>$150</span> <span>$100</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+                <div class="slides p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/w1.png">
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">Watch</p>
+                        <p class="tit">2022 Watch</p>
+                        <p class="price"><span>$500</span> <span>$29</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+                <div class="slides p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/g7.JPG">
+                        <div class="offer">
+                            -10%
+                        </div>
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">BackPack</p>
+                        <p class="tit">Portable BackPack</p>
+                        <p class="price"><span>$20</span> <span>$15</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+                <div class="slides p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/s3.jpg">
+                        <div class="offer">
+                            -30%
+                        </div>
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">Shoe</p>
+                        <p class="tit">Party Shoe</p>
+                        <p class="price"><span>$100</span> <span>$99</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+                <div class="slides p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/bp9.jpg">
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">Glass</p>
+                        <p class="tit">Modern Glass</p>
+                        <p class="price"><span>$50</span> <span>$39</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+                <div class="slides p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/g16.jpg">
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">Watch</p>
+                        <p class="tit">2022 Watch</p>
+                        <p class="price"><span>$60</span> <span>$49</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+                <div class="slides p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/s4.jpg">
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">BackPack</p>
+                        <p class="tit">Portable BackPack</p>
+                        <p class="price"><span>$20</span> <span>$19</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+                <div class="slides p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/w2.jpg">
+                        <div class="offer">
+                            -10%
+                        </div>
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">Shoe</p>
+                        <p class="tit">Party Shoe</p>
+                        <p class="price"><span>$100</span> <span>$99</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+                <div class="slides p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/g7.JPG">
+                        <div class="offer">
+                            -20%
+                        </div>
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">Glass</p>
+                        <p class="tit">Modern Glass</p>
+                        <p class="price"><span>$50</span> <span>$39</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+                <div class="slides p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/w22.png">
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">Watch</p>
+                        <p class="tit">2022 Watch</p>
+                        <p class="price"><span>$600</span> <span>$499</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+                <div class="slides p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/w5.webp">
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">BackPack</p>
+                        <p class="tit">Portable BackPack</p>
+                        <p class="price"><span>$200</span> <span>$139</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+                <div class="slides p-row">
+                    <div class="product-img">
+                        <img src="./photos/home/w7.png">
+                        <div class="offer">
+                            -50%
+                        </div>
+                        <button type="button" class="btn">Quick View</button>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <p class="cat">Shoe</p>
+                        <p class="tit">Party Shoe</p>
+                        <p class="price"><span>$100</span> <span>$99</span></p>
+                        <button type="button" class="btn">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fas fa-chevron-left left-arrow"></div>
+    <div class="fas fa-chevron-right right-arrow"></div>
+    </div>
+   <!-- latest products show end -->
+
+   <!-- deal special offer products start -->
+
+   <div class="product-container">
+    <div class="products deal">
+        <div class="title">
+            <h3>Deal of the day</h3>
+        </div>
+        <div class="dc">
+            <p>Upto 50% off</p>
+            <div class="time">
+                <div class="date">
+                    <span class="d">000</span>
+                     <p>Day</p>
+                </div>
+                <div class="date">
+                    <span class="h">00</span>
+                    <p>Hour</p>
+                </div>
+                <div class="date">
+                    <span class="m">00</span>
+                    <p>Minute</p>
+                </div>
+                <div class="date">
+                    <span class="s">00</span>
+                    <p>Seconds</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-row">
+            <div class="product-col-4 p-row">
+                <div class="product-img">
+                    <img src="./photos/home/g13.jpg">
+                    <div class="offer">
+                        -50%
+                    </div>
+                    <button type="button" class="btn">Quick View</button>
+                    <div class="icons">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+                <div class="adv">
+                    <p class="cat">Glass</p>
+                    <p class="tit">Modern Glass</p>
+                    <p class="price"><span>$500</span> <span>$399</span></p>
+                    <button type="button" class="btn">add to cart</button>
+                </div>
+            </div>
+            <div class="product-col-4 p-row">
+                <div class="product-img">
+                    <img src="./photos/home/w2.jpg">
+                    <div class="offer">
+                        -50%
+                    </div>
+                    <button type="button" class="btn">Quick View</button>
+                    <div class="icons">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+                <div class="adv">
+                    <p class="cat">Watch</p>
+                    <p class="tit">2022 Watch</p>
+                    <p class="price"><span>$600</span> <span>$499</span></p>
+                    <button type="button" class="btn">add to cart</button>
+                </div>
+            </div>
+            <div class="product-col-4 p-row">
+                <div class="product-img">
+                    <img src="./photos/home/bp9.jpg">
+                    <div class="offer">
+                        -50%
+                    </div>
+                    <button type="button" class="btn">Quick View</button>
+                    <div class="icons">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+                <div class="adv">
+                    <p class="cat">BackPack</p>
+                    <p class="tit">Portable BackPack</p>
+                    <p class="price"><span>$200</span> <span>$139</span></p>
+                    <button type="button" class="btn">add to cart</button>
+                </div>
+            </div>
+            <div class="product-col-4 p-row">
+                <div class="product-img">
+                    <img src="./photos/home/s4.jpg">
+                    <div class="offer">
+                        -50%
+                    </div>
+                    <button type="button" class="btn">Quick View</button>
+                    <div class="icons">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+                <div class="adv">
+                    <p class="cat">Shoe</p>
+                    <p class="tit">Party Shoe</p>
+                    <p class="price"><span>$100</span> <span>$99</span></p>
+                    <button type="button" class="btn">add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- deal special offer products end -->
+
+   <!-- customer review start -->
+   <div class="product-container">
+    <div class="products">
+        <div class="title">
+            <h3>Customer's <span>Review</span></h3>
+        </div>
+        <div class="reviews">
+            <div class="review">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia alias aspernatur cum rem hic et error non incidunt consequuntur deserunt perferendis similique amet repellendus adipisci placeat, neque quam facilis tenetur.</p>
+                <div class="profile">
+                    <div class="proPic">
+                        <img src="./photos/home/p1.jpg" alt="">
+                    </div>
+                    <div class="proDt">
+                        <p>Johnny</p>
+                        <small>Happy Customer</small>
+                    </div>
+                </div>
+            </div>
+            <div class="review">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia alias aspernatur cum rem hic et error non incidunt consequuntur deserunt perferendis similique amet repellendus adipisci placeat, neque quam facilis tenetur.</p>
+                <div class="profile">
+                    <div class="proPic">
+                        <img src="./photos/home/p2.jpg" alt="">
+                    </div>
+                    <div class="proDt">
+                        <p>Aria</p>
+                        <small>Happy Customer</small>
+                    </div>
+                </div>
+            </div>
+            <div class="review">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia alias aspernatur cum rem hic et error non incidunt consequuntur deserunt perferendis similique amet repellendus adipisci placeat, neque quam facilis tenetur.</p>
+                <div class="profile">
+                    <div class="proPic">
+                        <img src="./photos/home/p3.jpg" alt="">
+                    </div>
+                    <div class="proDt">
+                        <p>Will</p>
+                        <small>Happy Customer</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+   <!-- customer review end -->
+    <!-- product section show end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col-4">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="accounts.html">Create Account</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Use</li>
+                        <li>Return Policy</li>
+                        <li>Block Posts</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i>
+                            Twitter
+                        </li>
+                        <li>
+                            <i class="fab fa-youtube"></i>
+                            Youtube</li>
+
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                            Instragram
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Download App</h3>
+                    <ul>
+                        <li><img src="./photos/home/playstore.png" alt=""></li>
+                        <li><img src="./photos/home/appstore.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+                Created by <i class="fas fa-heart"></i> <span>A.K.W.H</span> | All right reserved
+        </div>
+    </footer>
+    <!-- footer end -->
+     <!-- overlay -->
+     <div class="overlay"></div>
+     <!-- overlay -->
+   </main>
     <!-- script link -->
     <script src="./script.js"></script>
 </body>
