@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <title>Products</title>
+</head>
+<body>
+    <main>
+        <div class="home">
+            <!-- header section start -->
+            <header>
+                <div class="container">
+                    <nav class="nav-bar">
+                        <div class="logo">
+                            <img src="./photos/home/logo.png" alt="logo">
+                        </div>
+                        <div class="nav-links">
+                            <div class="logo">
+                                <img src="./photos/home/logo.png" alt="logo">
+                            </div>
+                            <i id="cross">&#10005;</i>
+                            <ul>
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="account.html">Create Account</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="another-links">
+                            <ul>
+                                <li><a href="">Sign Up</a></li>
+                                <li><a href="#" class="fas fa-shopping-bag" id="bag"></a></li>
+                            </ul>
+                        </div>
+                        <i class="fas fa-bars" id="bars"></i>
+                    </nav>
+                </div>
+            </header>
+            <!-- header section end -->
+            <div class="container">
+                 <div class="shop-title">
+                    <h3>Shop By <span>Category</span></h3>
+                 </div>
+                <div class="shop-category">
+                    <div class="category">
+                            <img src="./photos/products/watches.jpg" alt="">
+                            <div class="img-title">
+                                <p>20% of watches</p>
+                                <a href="#watches" class="btn wt">Shop Now</a>
+                            </div>
+                    </div>
+                    <div class="category">
+                            <img src="./photos/products/shoes.jpg" alt="">
+                            <div class="img-title">
+                                <p>10% of shoes</p>
+                                <a href="#shoes" class="btn sh">Shop Now</a>
+                            </div>
+                    </div>
+                    <div class="category">
+                            <img src="./photos/products/backpacks.jpg" alt="">
+                            <div class="img-title">
+                                <p>30% of backpackes <br>until father day</p>
+                                <a href="#backpacks" class="btn bp">Shop Now</a>
+                            </div>
+                    </div>
+                    <div class="category">
+                            <img src="./photos/products/glasses.jpg" alt="">
+                            <div class="img-title">
+                                <p>modern glasses</p>
+                                <a href="#glasses" class="btn sh">Shop Now</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <div class="all-products">
+            <div class="sort">
+                <div class="pro-cat">
+                    <p id="choose">Choose Category</p>
+                    <select class="select" onchange="location = this.value">
+                        <option value="#watches" id="wt">Watches</option>
+                        <option value="#shoes" id="sh">Shoes</option>
+                        <option value="#backpacks" id="bp">Backpacks</option>
+                        <option value="#glasses" id="gs">Glasses</option>
+                    </select>
+                </div>
+            </div>
+            <div class="product-container pro-cat-container">
+                <div class="products show-products more-watches-products" id="watches">
+                    <div class="product-row active" id="show1">
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/watches/w1.jpg">
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/watches/w2.jpg">
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Watch</p>
+                                <p class="tit">2022 Watch</p>
+                                <p class="price"><span>$100</span> <span>$99</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/watches/w3.png">
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">BackPack</p>
+                                <p class="tit">Portable BackPack</p>
+                                <p class="price"><span>$200</span> <span>$139</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/watches/w4.png">
+                                <div class="offer">
+                                    -20%
+                                </div>
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Shoe</p>
+                                <p class="tit">Sport Shoe</p>
+                                <p class="price"><span>$100</span> <span>$99</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/watches/w5.webp">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/watches/w6.png">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/watches/w7.png">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/watches/w8.jpg">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-row" id="show2">
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/watches/w9.jpg">
+                                <div class="offer">
+                                    -20%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/watches/w19.jpg">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/watches/w17.png">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/watches/w15.webp">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <button type="button" class="btn left-btn"><i class="fas fa-angle-double-left"></i></button>
+                        <button type="button" class="btn one button" data-btn = "show1">1</button>
+                        <button type="button" class="btn two button" data-btn="show2">2</button>
+                        <button type="button" class="btn right-btn"><i class="fas fa-angle-double-right"></i></button>
+                    </div>
+                </div>
+                <div class="products show-products"id="shoes">
+                    <div class="product-row">
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/shoes/s1.jpg">
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/shoes/s3.jpg">
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Watch</p>
+                                <p class="tit">2022 Watch</p>
+                                <p class="price"><span>$100</span> <span>$99</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/shoes/s4.jpg">
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">BackPack</p>
+                                <p class="tit">Portable BackPack</p>
+                                <p class="price"><span>$200</span> <span>$139</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/shoes/s5.jpg">
+                                <div class="offer">
+                                    -20%
+                                </div>
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Shoe</p>
+                                <p class="tit">Sport Shoe</p>
+                                <p class="price"><span>$100</span> <span>$99</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/shoes/s7.jpg">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/shoes/s8.jpg">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/shoes/s9.png">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products show-products"id="backpacks">
+                    <div class="product-row">
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/backpacks/bp10.jpg">
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/backpacks/bp12.png">
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Watch</p>
+                                <p class="tit">2022 Watch</p>
+                                <p class="price"><span>$100</span> <span>$99</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/backpacks/bp2.jpg">
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">BackPack</p>
+                                <p class="tit">Portable BackPack</p>
+                                <p class="price"><span>$200</span> <span>$139</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/backpacks/bp3.jpg">
+                                <div class="offer">
+                                    -20%
+                                </div>
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Shoe</p>
+                                <p class="tit">Sport Shoe</p>
+                                <p class="price"><span>$100</span> <span>$99</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/backpacks/bp4.jpg">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/backpacks/bp5.jpg">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/backpacks/bp9.jpg">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products show-products more-glasses-products"id="glasses">
+                    <div class="product-row active" id="show1">
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/glasses/g1.jpg">
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/glasses/g2.jpeg">
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Watch</p>
+                                <p class="tit">2022 Watch</p>
+                                <p class="price"><span>$100</span> <span>$99</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/glasses/g3.jpg">
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">BackPack</p>
+                                <p class="tit">Portable BackPack</p>
+                                <p class="price"><span>$200</span> <span>$139</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/glasses/g4.jpg">
+                                <div class="offer">
+                                    -20%
+                                </div>
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Shoe</p>
+                                <p class="tit">Sport Shoe</p>
+                                <p class="price"><span>$100</span> <span>$99</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/glasses/g5.jpg">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/glasses/g6.jpg">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/glasses/g8.jpg">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/glasses/g9.jpg">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-row" id="show2">
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/glasses/g9.jpg">
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/glasses/g11.jpg">
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Watch</p>
+                                <p class="tit">2022 Watch</p>
+                                <p class="price"><span>$100</span> <span>$99</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/glasses/g12.jpg">
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">BackPack</p>
+                                <p class="tit">Portable BackPack</p>
+                                <p class="price"><span>$200</span> <span>$139</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/glasses/g14.jpg">
+                                <div class="offer">
+                                    -20%
+                                </div>
+                                <button type="button" class="btn">Quick View</button>
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Shoe</p>
+                                <p class="tit">Sport Shoe</p>
+                                <p class="price"><span>$100</span> <span>$99</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                        <div class="product-col-4 p-row">
+                            <div class="product-img">
+                                <img src="./photos/glasses/g15.jpg">
+                                <div class="offer">
+                                    -10%
+                                </div>
+                               <button type="button" class="btn view">Quick View</button>
+                               <div class="icons">
+                                   <i class="far fa-heart"></i>
+                                   <i class="far fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="adv">
+                                <p class="cat">Glass</p>
+                                <p class="tit">Modern Glass</p>
+                                <p class="price"><span>$50</span> <span>$39</span></p>
+                                <button type="button" class="btn">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <button type="button" class="btn left-btn"><i class="fas fa-angle-double-left"></i></button>
+                        <button type="button" class="btn one button" data-btn = "show1">1</button>
+                        <button type="button" class="btn two button" data-btn="show2">2</button>
+                        <button type="button" class="btn right-btn"><i class="fas fa-angle-double-right"></i></button>
+                    </div>
+                </div>
+           </div> 
+        </div>
+
+        <!-- footer start -->
+        <footer>
+            <div class="container">
+                <div class="footer-row">
+                    <div class="footer-col-4">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="accounts.html">Create Account</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Privacy Policy</li>
+                            <li>Terms of Use</li>
+                            <li>Return Policy</li>
+                            <li>Block Posts</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>
+                                <i class="fab fa-facebook"></i>
+                                Facebook
+                            </li>
+                            <li>
+                                <i class="fab fa-twitter"></i>
+                                Twitter
+                            </li>
+                            <li>
+                                <i class="fab fa-youtube"></i>
+                                Youtube</li>
+    
+                            <li>
+                                <i class="fab fa-instagram"></i>
+                                Instragram
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Download App</h3>
+                        <ul>
+                            <li><img src="./photos/home/playstore.png" alt=""></li>
+                            <li><img src="./photos/home/appstore.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                    Created by <i class="fas fa-heart"></i> <span>A.K.W.H</span> | All right reserved
+            </div>
+        </footer>
+        <!-- footer end -->
+         <!-- overlay -->
+         <div class="overlay"></div>
+         <!-- overlay -->
+    </main>
+       <!-- script link -->
+       <script src="./products.js"></script>
+</body>
+</html>
