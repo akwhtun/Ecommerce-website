@@ -672,18 +672,104 @@ select option{
 }
 /* products section end */
 
+/* product-detail section start */
+.details > .product-row{
+    background-color: var(--white);
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin:30px 0;
+
+}
+.pro-img-col{
+    margin: 30px 0 70px 0;
+    flex-basis: 48%;
+    height: 580px;
+    background-color: #cecece03;
+}
+.pro-img-col > .product-img{
+    width: 100%;
+    height: 100%;
+}
+.detail-col{
+    flex-basis: 50%;
+    padding-right: 15px;
+    color: var(--black);
+}
+.detail-col h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin:35px 0;
+}
+.detail-col p{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.detail-col p span{
+    font-size: 25px;
+}
+.detail-col p span:first-child{
+    color:#a2a2a2c3;
+    text-decoration: line-through;
+}
+.detail-col p span:last-child{
+    font-weight: bold;
+    margin-left: 8px;
+}
+.quan-btn{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    margin: 20px 0;
+}
+.quan-btn input{
+   width: 70px;
+   border-radius: 5px;
+   background-color: var(--black);
+   color:var(--white);
+}
+.quan-btn a{
+    background-color: var(--black);
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.dt-icons{
+    margin: 40px 0;
+    width: 60%;
+}
+.dt-icons i{
+    font-size: 22px;
+    color:#c6c4c4cf;
+    margin-left: 20px;
+}
+.dt-icons i:first-child{
+    margin-left: 0;
+}
+.back-btn{
+    margin:40px 0;
+    width: 220px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: var(--black);
+    color:var(--white);
+    border-radius: 5px;
+}
+/* product-detail section end */
 
 
 /* Responsive start */
 @media (max-width: 980px) {
 
     .category{
-        flex-basis: 70%;
+        flex-basis: 80%;
+    }
+    .shop-title h3{
+        padding-left: 130px;
     }
 
-    .shop-title{
-        margin-left: 130px;
-    }
 }
 @media (max-width: 780px) {
     /* navbar  */
@@ -836,6 +922,15 @@ select option{
     .sort{
         top:110px;
     }
+    .details > .product-row{
+        justify-content: center;
+    }
+    .pro-img-col{
+        flex-basis: 80%;
+    }
+    .detail-col{
+        flex-basis:80%;
+    }
 }
 
 @media (max-width :550px) {
@@ -877,5 +972,15 @@ select option{
         color:#b3b3b3;
     }
     /* footer */
+    
+    .category{
+        flex-basis: 97%;
+    }
+    .pro-img-col{
+        flex-basis: 90%;
+    }
+    .detail-col{
+        flex-basis: 90%;
+    }
 }
 /* Responsive end */
