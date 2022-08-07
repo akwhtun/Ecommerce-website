@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./styles.css">
     <!-- fontawesome link -->
     <link rel="stylesheet" href="./fontawesome/css/all.css">
-    <title>Product Detail</title>
+    <title>Your Shopping Cart</title>
 </head>
 <body>
-    
-    <main>
+
+    <main class="det-pro">
         <div class="home">
             <!-- header section start -->
             <header>
@@ -47,39 +47,57 @@
             </header>
             <!-- header section end -->
 
-            <div class="container details">
-                <div class="product-row">
-                    <div class="pro-img-col">
-                        <div class="product-img">
-                            <img src="" id="show-img">
-                        </div>
-                    </div>
-                    <div class="detail-col">
-                       <h3 class="d-tit"></h3>
-                       <p><span class="pri"></span> <span class="cur-pri"></span></p>
-                       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, accusantium? Voluptatem facere sed temporibus, quaerat aperiam a nam architecto? Sapiente laboriosam sunt exercitationem commodi, reprehenderit dolore itaque incidunt facere ullam?</p>
-                       <div class="quan-btn">
-                           <input type="number" class="btn num" value="1">
-                           <button type="button" class="btn cart">add to cart</button>
-                       </div>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sed delectus similique sit corporis itaque.</p>
-                       <div class="dt-icons">
-                           <i class="fab fa-facebook"></i>
-                           <i class="fab fa-twitter"></i>
-                           <i class="fas fa-envelope"></i>
-                       </div>
-                       <div>
-                           <a href="./products.html" class="back-btn btn">
-                           Back to products
-                            </a>
-                           <a href="./home.html" class="back-btn btn">
-                           Back to home
-                            </a>
-                       </div>
-                    </div>
-                </div>
+            <div class="container">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td class="product-name">
+                            <img src="./photos/home/g7.JPG" alt="" id="ord-img">
+                            <p class="ord-name">Glass</p>
+                        </td>
+                        <td class="ord-price">$10</td>
+                        <td class="ord-quantity">1</td>
+                        <td class="total">$10</td>
+                    </tr>
+                    <tr>
+                        <td class="product-name">
+                            <img src="./photos/watches/w2.jpg" alt="" id="ord-img">
+                            <p class="ord-name">2022 watch</p>
+                        </td>
+                        <td class="ord-price">$99</td>
+                        <td class="ord-quantity">1</td>
+                        <td class="total">$99</td>
+                    </tr>
+                    <tr>
+                        <td class="product-name">
+                            <img src="./photos/backpacks/bp2.jpg" alt="" id="ord-img">
+                            <p class="ord-name">Backpack</p>
+                        </td>
+                        <td class="ord-price">$15</td>
+                        <td class="ord-quantity">1</td>
+                        <td class="total">$15</td>
+                    </tr>
+                    <tr>
+                        <td class="product-name">
+                            <img src="./photos/shoes/s3.jpg" alt="" id="ord-img">
+                            <p class="ord-name">Shoe</p>
+                        </td>
+                        <td class="ord-price">$20</td>
+                        <td class="ord-quantity">2</td>
+                        <td class="total">$40</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="subtotal">SubTotal</td>
+                        <td>$164</td>
+                    </tr>
+                </table>
             </div>
-    
+        </div>
         <!-- footer start -->
         <footer>
             <div class="container">
@@ -116,7 +134,7 @@
                             <li>
                                 <i class="fab fa-youtube"></i>
                                 Youtube</li>
-    
+
                             <li>
                                 <i class="fab fa-instagram"></i>
                                 Instragram
@@ -137,27 +155,12 @@
             </div>
         </footer>
         <!-- footer end -->
-         <!-- overlay -->
-         <div class="overlay"></div>
-         <!-- overlay -->
-       </main>
-
-    <!-- script link -->
+        <!-- overlay -->
+        <div class="overlay"></div>
+        <!-- overlay -->
+   </main>
+    
+     <!-- script link -->
     <script src="./navbar.js"></script>
-    <script src="./product-detail.js"></script>
-    <script>
-        let cart = document.querySelector('.cart');
-        let num = document.querySelector('.num');
-        let qty = document.querySelector('#qty');
-        let add = 1;
-        let cou = 0;
-        cart.addEventListener('click', () => {
-            let total = add * parseInt(num.value);
-            cou += total;
-            qty.textContent = cou;
-            qty.classList.add('active');
-
-        });
-    </script>
 </body>
 </html>

@@ -42,8 +42,9 @@ body{
     box-shadow: 1px 1px 3px #e0e0e0c3,
                 -1px -1px 3px #ffffff;
     max-width: 1300px;
-    padding: 5px;
+    padding:5px 25px;
     z-index: 100;
+    transform: translateX(-25px);
 }
 
 .logo{
@@ -97,6 +98,21 @@ body{
 #bag{
     font-size: 25px;
     color:var(--black);
+    position: relative;
+}
+#bag span{
+    position: absolute;
+    right: 0;
+    top:-5px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 15px;
+    background-color: var(--red);
+    font-family: sans-serif;
+    border-radius: 50%;
+    color: var(--white);
 }
 
 #bars{
@@ -630,7 +646,7 @@ select option{
 .sort{
     position: sticky;
     top:60px;
-    z-index: 100;
+    z-index: 10;
 }
 
 #show2{
@@ -728,7 +744,7 @@ select option{
    background-color: var(--black);
    color:var(--white);
 }
-.quan-btn a{
+.quan-btn button{
     background-color: var(--black);
     margin-left: 10px;
     text-transform: uppercase;
@@ -758,6 +774,58 @@ select option{
     border-radius: 5px;
 }
 /* product-detail section end */
+
+/* shopping-cart start */
+
+table{
+    width: 100%;
+    color:var(--white);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-spacing: 1px;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+td{
+   box-shadow: 1px 1px 3px #c9c9c9,
+                -1px -1px 3px #fcfcfc6f;
+    border: none;
+    color: var(--black);
+    padding:10px;
+    background: none;
+}
+td img{
+    width: 170px;
+    height: 130px;
+}
+tr{
+    text-align: center;
+}
+th{
+    background-color:var(--black);
+    padding:5px 10px;
+    border:none;
+}
+.product-name{
+    display: flex;
+    justify-content: center;
+}
+.product-name p{
+  margin: auto 25px;
+}
+#qty{
+    display: none;
+}
+#qty.active{
+    display: block;
+}
+.subtotal{
+    text-align: right;
+    padding-right: 35px;
+}
+/* shopping-cart end */
+
+
 
 
 /* Responsive start */
@@ -863,6 +931,9 @@ select option{
         transition: 0.3s linear;
         opacity: 0.7;
     }
+    .nav-bar.active{
+        transform: translateX(0);
+    }
    
     /* navbar  */
 
@@ -931,7 +1002,23 @@ select option{
     .detail-col{
         flex-basis:80%;
     }
+
+    table{
+        width: 90%;
+        margin:30px auto;
+    }
 }
+
+@media (max-width : 670px) {
+    table{
+        width: 95%;
+    }
+    .product-name{
+        flex-direction: column;
+    }
+}
+
+
 
 @media (max-width :550px) {
     .section .content{
