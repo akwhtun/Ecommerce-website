@@ -550,7 +550,7 @@ footer .container{
 .shop-title h3{
     font-weight:normal;
     font-size: 25px;
-    padding: 5px 0px;
+    padding: 5px 0;
     text-align: left;
     border-bottom: 3px solid var(--white);
 }
@@ -831,8 +831,9 @@ th{
 }
 .form{
     max-width: 1300px;
-    height: 88vh;
-    margin:20px auto;
+    min-height: 88vh;
+    margin:0 auto;
+    margin-top: 20px;
     padding:0 25px;
     display: flex;
     flex-wrap: wrap;
@@ -866,7 +867,8 @@ th{
     align-items: center;
 }
 
-.input-group input{
+.input-group input,
+.input-group textarea{
     width:90%;
     font-size: 15px;
     padding:7px;
@@ -921,6 +923,35 @@ th{
     width: 100%;
 }
 /* form */
+
+/* contact */
+.contact{
+    background-color: var(--white);
+}
+
+.another-contact{
+    display:flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin:30px auto;
+    padding:0 30px;
+    justify-content: space-between;
+}
+
+.another-contact i{
+    font-size: 35px;
+}
+
+.phone,.email,.location{
+    display: flex;
+    margin: 10px 0;
+}
+.phone > div,
+.email > div,
+.location > div{
+    margin-left: 8px;
+}
+/* contact */
 
 
 
